@@ -145,6 +145,20 @@ You should have fun and push yourselves! This is a challenge activity—which me
                 }
             });
 
+            // Add an on click listener to all elements that have the class "operator"
+            $(".operator").on("click", function () {
+
+                // Check if a first number has already been selected
+                // Or we've already run a calculation, if so we just exit.
+                if (!firstNumber || isCalculated) return;
+                // Set isOperatorChosen to true so we start writing to secondNumber
+                isOperatorChosen = true;
+                // Store off the operator
+                operator = this.value;
+                // Set the HTML of the #operator to the text of what was clicked
+                $("#operator").html($(this).text());
+            });
+
         });
     </script>
 </body>
