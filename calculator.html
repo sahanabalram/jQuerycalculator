@@ -79,7 +79,16 @@ $(document).ready(function(){
  let result;
  let isOperatorChosen;
  let isCalculated;
-
+    // Function to initalize calculator
+    function initalizeCalculator() {
+        firstNumber = "";
+        secondNumber = "";
+        operator = "";
+        isOperatorChosen = false;
+        isCalculated = false;
+        // Div should be emptied during initialization
+        $("#first-number, #second-number,#operator,#result").empty();
+    }
 });
 </script>
 </body>
