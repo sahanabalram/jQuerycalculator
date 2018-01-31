@@ -1,0 +1,12 @@
+.number {
+    background-color: #FFFF80;
+  border: none;
+  border-radius: 5px;
+  color: #333300;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 1.25em;
+  height: 40px;
+  margin-top: 0.28125em; /* was 6px */
+  margin-right: 0.09375em; /* was 2px */
+  width: 60px;
+}
