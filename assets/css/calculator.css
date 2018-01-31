@@ -1,12 +1,59 @@
-.number {
-    background-color: #FFFF80;
-  border: none;
-  border-radius: 5px;
-  color: #333300;
-  font-family: "Comfortaa", sans-serif;
-  font-size: 1.25em;
-  height: 40px;
-  margin-top: 0.28125em; /* was 6px */
-  margin-right: 0.09375em; /* was 2px */
-  width: 60px;
+body {
+    background-color: #333300;
+    font-size: 100%;
 }
+
+#calculator {
+    transform: scale(1);
+    background-color: #CCCC00;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 10px #FFFF99;
+    height: 380px;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#result {
+    background-color: #FFFF99;
+    border-radius: 5px;
+    color: #333300;
+    font-size: 1.375em;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 0.5625em;
+    /*was 12px*/
+    width: 250px;
+    text-align: right;
+    vertical-align: bottom;
+    padding: 3px 4px;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.number,
+.operator,
+.equal,
+.clear {
+    background-color: teal;
+    border: none;
+    border-radius: 5px;
+    color: #333300;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.25em;
+    height: 40px;
+    margin-top: 0.28125em;
+    /* was 6px */
+    margin-right: 0.09375em;
+    /* was 2px */
+    width: 60px;
+}
+.number,.operator,.equal,.clear:active {
+    transform: translateX(1px) translateY(1px);
+  }
